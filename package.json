@@ -66,6 +66,9 @@
   },
   "dependencies": {
     "@types/lodash": "^4.14.123",
-    "font-awesome": "^4.7.0"
+    "bootstrap": "^4.3.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0"
   }
 }

@@ -1,0 +1,95 @@
+@import '_colors';
+@import '~font-awesome/css/font-awesome.css'; //to preload
+ @import 'placeholder'; // to Prefetch 
+$font-stack: Helvetica, sans-serif;
+
+
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  background-color: $bgcolor;
+  &:fullscreen {
+	background-color: $bgcolor; // propriété CSS peu supportée par les navigateurs qui devrait être auto-préfixée en mode production
+  }
+} 
+.blur-up {
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  transition: filter 400ms, -webkit-filter 400ms;
+}
+
+.blur-up.lazyloaded {
+  -webkit-filter: blur(0);
+  filter: blur(0);
+}
+
+
+
+.myclass{
+ font-family: "alien";
+}
+
+@font-face {
+    font-family: "alien";
+    src: url('../fonts/aliendude.ttf') format("truetype") ;
+
+    font-weight: 600;
+    font-style: normal;
+  }
+
+
+
+
+
+// #img {
+//   background-image: url('../media/man.jpg') ;
+//   width:500px;
+//   height:400px;
+// } 
+
+.coco {
+
+  color: $primary-color;
+}
+
+
+
+/* fade image in while loading and show a spinner as background image (good for progressive images) */
+
+.lazyload {
+	opacity: 0;
+}
+
+.lazyloading {
+	opacity: 1;
+	transition: opacity 300ms;
+	// background: #f7f7f7 url(../media/loader.gif) no-repeat center;
+}
+
+// .lazyloaded {
+// 	opacity: 1;
+// 	transition: opacity 300ms;
+// }
+
+
+
+
+
+
+ 
+
+.container {
+  margin: 2rem auto;
+  max-width: 1024px;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+// height: 100vh
+// display: flex
+// flex-direction: column
+// justify-content: center
+// align-items: center

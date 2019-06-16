@@ -1,0 +1,93 @@
+onload="this.onload=null;this.rel='stylesheet'"
+<noscript><link rel="stylesheet" href="styles.css"></noscript>
+
+
+
+
+.placeholder {
+    overflow: hidden;
+    background: white;
+    border-radius: .25rem;
+    max-width: 380px;
+    width: 380px;
+    box-shadow:
+      0 15px 30px 0 rgba(0,0,0,0.05),
+      0 5px 15px 0 rgba(0,0,0,.05);
+    transition: ease box-shadow 0.3s;
+    &:hover {
+     box-shadow:
+      0 15px 60px 0 rgba(0,0,0,0.08),
+      0 5px 25px 0 rgba(0,0,0,.08);
+    }
+  }
+  
+   
+  
+  .placeholder h2,
+  .placeholder p {
+   background-color:#d8d8d8;
+   font-family:sans-serif;
+   overflow:hidden;
+   position:relative;
+   margin: 1em 0;
+   text-indent: -65px;
+   
+  }
+  .placeholder h2:after,
+  .placeholder p:after {
+   -webkit-animation:placeholderAnimation 2s infinite;
+   animation:placeholderAnimation 2s infinite;
+   background:-webkit-gradient(linear,left top,right top,from(#f2f2f2),color-stop(#fcfcfc),to(#f2f2f2));
+   background:linear-gradient(90deg,#f2f2f2,#fcfcfc,#f2f2f2);
+   content:"";
+   left:0;
+   height:20px;
+   position:absolute;
+   top:0;
+   width:100%;
+   display:inline-block;
+  }
+  .placeholder__xsmall {
+   width:35%
+  }
+  .placeholder__small {
+   width:50%
+  }
+  .placeholder__medium {
+   width:75%
+  }
+  .placeholder__large {
+   width:85%
+  }
+   
+   
+  @keyframes placeholderAnimation {
+   0% {
+    -webkit-transform:translate3d(-100%,0,0);
+    transform:translate3d(-100%,0,0)
+   }
+   to {
+    -webkit-transform:translate3d(100%,0,0);
+    transform:translate3d(100%,0,0)
+   }
+  }
+  .shadow {
+   overflow:visible;
+   border-radius:4px;
+   -webkit-box-shadow:-1px 1px 10px 0 hsla(0,0%,100%,.44);
+   box-shadow:-1px 1px 10px 0 hsla(0,0%,100%,.44)
+  }
+  
+
+
+
+  Extract the class definitions marked with green in the report obtained from the coverage tool, and put those classes inside a <style> block at the head of the page:
+
+  <style type="text/css">
+  .accordion-btn {background-color: #ADD8E6;color: #444;cursor: pointer;padding: 18px;width: 100%;border: none;text-align: left;outline: none;font-size: 15px;transition: 0.4s;}.container {padding: 0 18px;display: none;background-color: white;overflow: hidden;}h1 {word-spacing: 5px;color: blue;font-weight: bold;text-align: center;}
+  </style>
+  
+      Then, load the rest of the classes asynchronously, by applying the following pattern:
+  
+  <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="styles.css"></noscript>

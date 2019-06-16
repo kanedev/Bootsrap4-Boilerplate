@@ -1,0 +1,54 @@
+[
+  {
+    "_id": "5ce6fd96fd2e77c0ccfba719",
+    "index": 0,
+    "guid": "839b5b8f-e3e3-474e-8eeb-e8948d0c200b",
+    "isActive": true,
+    "balance": "$3,125.24",
+    "picture": "http://placehold.it/32x32",
+    "age": 36,
+    "name": "Kristy Yang",
+    "gender": "female",
+    "company": "PLUTORQUE",
+    "email": "kristyyang@plutorque.com"
+  },
+  {
+    "_id": "5ce6fd96cbf069b0291e0061",
+    "index": 1,
+    "guid": "62ee357b-3a21-4a4c-9ffd-08cfd36b339e",
+    "isActive": false,
+    "balance": "$2,180.30",
+    "picture": "http://placehold.it/32x32",
+    "age": 36,
+    "name": "Lidia Lewis",
+    "gender": "female",
+    "company": "KRAG",
+    "email": "lidialewis@krag.com"
+  },
+  {
+    "_id": "5ce6fd96eb77f82ab833ab21",
+    "index": 2,
+    "guid": "b7858c8e-b212-43ca-9cc1-69a482ec4118",
+    "isActive": true,
+    "balance": "$3,348.47",
+    "picture": "http://placehold.it/32x32",
+    "age": 21,
+    "name": "Dale Craig",
+    "gender": "male",
+    "company": "GEEKKO",
+    "email": "dalecraig@geekko.com"
+  },
+  {
+    "_id": "5ce6fd96dd170cd36ee705b0",
+    "index": 3,
+    "guid": "e676e758-50d9-432e-8550-c86d201c599e",
+    "isActive": false,
+    "balance": "$1,407.40",
+    "picture": "http://placehold.it/32x32",
+    "age": 36,
+    "name": "Tisha Mcconnell",
+    "gender": "female",
+    "company": "QUALITERN",
+    "email": "tishamcconnell@qualitern.com"
+  }
+]

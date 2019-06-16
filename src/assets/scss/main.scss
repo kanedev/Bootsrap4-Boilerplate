@@ -1,0 +1,50 @@
+@import '_colors';
+@import 'placeholder'; // to Prefetch  
+$font-stack: Helvetica, sans-serif;
+
+
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  background-color: $bgcolor;
+  &:fullscreen {
+	background-color: $bgcolor; // propriété CSS peu supportée par les navigateurs qui devrait être auto-préfixée en mode production
+  }
+} 
+
+.myclass{
+    font-family: "alien";
+   }
+   
+   @font-face {
+       font-family: "alien";
+       src: url('../fonts/aliendude.ttf') format("truetype") ;
+   
+       font-weight: 600;
+       font-style: normal;
+       font-display: swap;
+     }
+  
+     
+ 
+.lazyload {
+	opacity: 0;
+}
+
+.lazyloading {
+	opacity: 1;
+	transition: opacity 300ms;
+	// background: #f7f7f7 url(../media/loader.gif) no-repeat center;
+}
+
+
+ 
+
+.container {
+  margin: 2rem auto;
+  max-width: 1024px;
+  display: flex;
+  justify-content: center;
+}
+    

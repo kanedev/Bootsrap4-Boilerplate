@@ -34,8 +34,8 @@ const config = {
     app: './js/index.js',
   //  main: './js/main.ts',
   //  another: './js/another-module.ts',
-  // maincss: './assets/scss/main.scss',
-   //appcss: './assets/scss/app.scss',
+   maincss: './assets/scss/main.scss',
+   appcss: './assets/scss/app.scss',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -125,7 +125,7 @@ const config = {
       {
         test: /\.(sa|sc|c)ss$/,
         include: [path.resolve(__dirname, 'src', 'assets', 'scss')],
-        exclude: [path.resolve(__dirname, 'node_modules')],
+       // exclude: [path.resolve(__dirname, 'node_modules')],
         use: [
           //   'css-hot-loader',
           {
@@ -254,14 +254,19 @@ const config = {
 
 
   plugins: [
-    
+
+ 
+
+
+
+    //new BundleAnalyzerPlugin(),
  
    new webpack.HashedModuleIdsPlugin(),
 
 
 
    
-   //new DashboardPlugin(),
+    new DashboardPlugin(),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       // inject: false,
@@ -281,8 +286,10 @@ const config = {
     new MiniCssExtractPlugin({
       // filename: "assets/css/[name].[hash].css",
       filename: env === 'development' ? '[name].css' : './assets/css/[name].[hash].css',
-      chunkFilename: env === 'development' ? '[name].[id].css' : './assets/css/[name].[id].[hash].css',
+      chunkFilename: env === 'development' ? '[name].css' : './assets/css/[name].[hash].css',
     }),
+
+    
 
     // new HtmlCriticalWebpackPlugin({
     //   base: path.resolve(__dirname, 'dist'),
@@ -297,7 +304,7 @@ const config = {
     //     blockJSRequests: false,
     //   }
     // }),
-//     new FixStyleOnlyEntriesPlugin({ extensions:['maincss'] }), 
+   new FixStyleOnlyEntriesPlugin(), 
 //       new PreloadWebpackPlugin({
 // // fileWhitelist: [/maincss.css/,/\.\/js\/main.bundle.js/],
 //   rel: 'preload',
@@ -311,14 +318,15 @@ const config = {
    
     //env === 'development' ? 'new webpack.HotModuleReplacementPlugin(),' : '',
     //new webpack.HotModuleReplacementPlugin(),
-    //new FixStyleOnlyEntriesPlugin(),
-    // new BundleAnalyzerPlugin({
+ 
 
-    // }),
   ],
 
   resolve: {
-    extensions: ['.ts', '.js']
+    extensions: ['.ts', '.js'],
+    alias: {
+      'jquery': 'jquery/dist/jquery.slim.min.js',
+    }
   },
   //  resolve: {
   //      extensions: ['.json','.ts', '.tsx', '.js', '.jsx']

@@ -1,50 +1,22 @@
-@import '_colors';
-@import 'placeholder'; // to Prefetch  
-$font-stack: Helvetica, sans-serif;
+//@import '_colors';
+//@import 'placeholder'; // to Prefetch  
 
 
 
-body {
-  font: 100% $font-stack;
-  color: $primary-color;
-  background-color: $bgcolor;
-  &:fullscreen {
-	background-color: $bgcolor; // propriété CSS peu supportée par les navigateurs qui devrait être auto-préfixée en mode production
-  }
-} 
+// Option A : Include Bootsrap.scss
+// Custom.scss
+@import "~bootstrap/scss/bootstrap";
 
-.myclass{
-    font-family: "alien";
-   }
-   
-   @font-face {
-       font-family: "alien";
-       src: url('../fonts/aliendude.ttf') format("truetype") ;
-   
-       font-weight: 600;
-       font-style: normal;
-       font-display: swap;
-     }
-  
-     
- 
-.lazyload {
-	opacity: 0;
-}
+// Option B: Include parts of Bootstrap
 
-.lazyloading {
-	opacity: 1;
-	transition: opacity 300ms;
-	// background: #f7f7f7 url(../media/loader.gif) no-repeat center;
-}
+// Required  (Before the import : cost = 4ko) 
+//@import "~bootstrap/scss/functions";
+//@import "~bootstrap/scss/variables";
+//@import "~bootstrap/scss/mixins";
 
-
- 
-
-.container {
-  margin: 2rem auto;
-  max-width: 1024px;
-  display: flex;
-  justify-content: center;
-}
-    
+// Optional
+// @import "~/bootstrap/scss/reboot";
+// @import "~/bootstrap/scss/type";
+// @import "~/bootstrap/scss/images";
+// @import "~/bootstrap/scss/code";
+// @import "~bootstrap/scss/grid";

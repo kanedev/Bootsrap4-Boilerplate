@@ -1,0 +1,130 @@
+/* 
+ * 6.4 Section: Works 
+ */
+ #works {
+    padding-top: 2%;
+    padding-bottom: 4%;
+    background-color: $primary-color;
+   /* IE7 */
+    @include pills-nav();
+      hr
+      {
+          color: $primary-color-light !important;
+    border-color: $primary-color-light !important;
+    background-color: $primary-color-light !important;
+  }
+  
+  .section-subtitle {
+    color: $primary-color-light  !important;
+  }
+  
+  .centered-pills {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .centered-pills ul.nav-pills {
+    display: inline-block;
+  }
+  
+  .centered-pills li {
+    display: inline;
+  }
+  
+  .centered-pills a {
+    float: left;
+  }
+  
+  * html .centered-pills ul.nav-pills {
+    display: inline;
+  } /* IE6 */
+  * + html .centered-pills ul.nav-pills {
+    display: inline;
+  }
+  
+  .work-content {
+    padding: 8 10 6 8;
+  }
+  
+  .work-box {
+    position: relative;
+    z-index: 160;
+    overflow: hidden;
+  }
+  
+  .work-box-overlay {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    @include  gradient($primary-color, $primary-color-dark, 'vertical');
+          @include opacity(0);
+          > i
+          {
+              padding-top: 20%;
+  }
+      }
+  
+  .work-img {
+    z-index: -10;
+    -webkit-transition: all 1.5s ease-in-out;
+    -moz-transition: all 1.5s ease-in-out;
+    -ms-transition: all 1.5s ease-in-out;
+    -o-transition: all 1.5s ease-in-out;
+  }
+  
+  .work-img-desc {
+    position: absolute;
+    z-index: 20;
+    top: 120%;
+    width: 90%;
+    height: auto;
+    margin: 5%;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    border-width: .5px;
+    border-style: solid;
+    border-color: $color-white;
+    > p
+          {
+              font-size: 18px;
+    font-weight: blod;
+    padding-top: 10px;
+    text-transform: uppercase;
+    color: $accent-color;
+              /*          font-family: $font-tertiary;
+              letter-spacing: 1px;
+              line-height: 32px;   */
+  }
+      }
+  
+  .col-md-3,
+      .col-sm-6,
+      .col-xs-12 {
+    padding: 0 0 2 2;
+  }
+  
+  .work-box:hover > a {
+    > .work-box-overlay
+          {
+              @include opacity(.5);
+  }
+          >.work-img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+          >.work-img-desc {
+    top: 60%;
+  }
+      }
+  }

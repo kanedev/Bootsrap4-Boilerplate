@@ -1,0 +1,26 @@
+.form-control {
+  background-color: $primary-color-dark;
+  border-color: $primary-color-light;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  //border: $radius solid $primary-color-light;
+  color : $secondary-color-light;
+ // border-radius: 0px; // Note: This has no effect on <select>s in some browsers, due to the limited stylability of <select>s in CSS.
+ 
+ // BS3
+ //@include form-control-focus($primary-color-light); 
+ //@include placeholder($primary-color-light); 
+ 
+ @include border-top-radius($radius);
+ @include border-bottom-radius($radius);
+}
+
+input[type="text"],input[type="email"] {
+ 
+  // BS3
+  //@include form-control-focus($primary-color-light);
+  // @include placeholder($primary-color-light);
+}
+
+ 
+
+ 

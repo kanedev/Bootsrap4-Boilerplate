@@ -1,0 +1,54 @@
+// mixin opacity
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity = $opacity-ie); //IE8
+} 
+
+@mixin gradient($start-color, $end-color, $orientation) {
+  background: $start-color; // fallback for old browsers 
+  @if $orientation == 'vertical' {
+     
+  background: -webkit-linear-gradient(to bottom, $start-color , $end-color);
+   //  Chrome 10-25, Safari 5.1-6 
+  background: -webkit-linear-gradient(top, $start-color , $end-color);
+  background: linear-gradient(to bottom, $start-color , $end-color);
+  //   W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
+  } @else if $orientation == 'horizontal' {
+    // fallback for old browsers 
+  background: -webkit-linear-gradient(to left, $start-color , $end-color);
+   //  Chrome 10-25, Safari 5.1-6 
+  background: -webkit-linear-gradient(right, $start-color , $end-color);
+  background: linear-gradient(to left, $start-color , $end-color);
+   //  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
+  } @else {
+    background: -webkit-radial-gradient(center, ellipse cover, $start-color, $end-color);
+    background: radial-gradient(ellipse at center, $start-color, $end-color);
+  }
+}
+
+
+
+ 
+ @mixin btn-rounded-variant ($border-radius) {
+     border-radius: $border-radius !important;
+ }
+ 
+  @mixin btn-raised-variant ($color) {
+	background:  darken($color, 15%);
+	box-shadow: none;
+	margin-bottom: -3px;
+	margin-top: 3px;
+ }
+ 
+  @mixin btn-outline-variant ($border-radius,$color) {
+     border-radius: $border-radius !important;
+     background: none;
+     border : $border-radius solid $color;
+     color : $color;
+ }
+ 
+ 
+
+ 
+ 

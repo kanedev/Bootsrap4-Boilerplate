@@ -1,0 +1,83 @@
+header {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    padding: 0 !important;
+    text-align: center;
+   @include gradient-directional( $secondary-color, $primary-color, -135deg);
+}
+
+//carousel
+@import 'components/_carousel.scss';
+
+/* Carousel-Bar : Begin */
+.flex-container {
+    width: 100%;
+    height: 60px;
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  @include opacity(.6);
+  
+  background-color: $primary-color;
+   display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    }
+
+.flex-item:nth-child(1) {
+padding-left :10px;
+padding-top :10px;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    }
+
+.flex-item:nth-child(2) {
+    padding-right: 10px;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    }
+
+/*
+    Legacy Firefox implementation treats all flex containers
+    as inline-block elements.
+*/
+
+@-moz-document url-prefix() {
+  .flex-container {
+    -moz-box-sizing: border-box;
+    width: 100%;
+  }
+}
+/* Carousel-Bar : End */
+

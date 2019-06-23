@@ -1,0 +1,99 @@
+/* Navigation :  Begin */
+
+#custom-bootstrap-menu.navbar-default {
+    font-size: 20px;
+    font-family: $font-secondary;
+    background-color: $primary-color;
+    border-width: 0;
+    text-transform:  uppercase;
+    border-radius: 0;
+    .navbar-brand {
+        color: $secondary-color-light;
+    }
+    .navbar-nav {
+        > li 
+        {
+            > a {
+                color: $secondary-color-light;
+                &:hover {
+                    color: $accent-color;
+                }
+                &:focus {
+                    color: $accent-color;
+                }
+            }
+            @if $dropdown {
+                > .dropdown-menu { 
+                    background-color: $primary-color;
+
+                    >li > a {
+                        color: $secondary-color-light;
+                        background-color: $primary-color;
+                        &:hover {
+                            color: $accent-color;
+                            background-color: $secondary-color;
+                        }
+                        &:focus {
+                            color: $accent-color;
+                            background-color: $secondary-color;
+                        }    
+                    }  
+                    > li.divider {
+                        background-color: $secondary-color ;   
+                    }
+
+                }
+            }
+        }
+        > .active > a {
+            color: $accent-color;
+            background-color: $secondary-color;
+            &:hover {
+                color: $accent-color;
+                background-color: $secondary-color;
+            }
+            &:focus {
+                color: $accent-color;
+                background-color: $secondary-color;
+            }    
+        }
+
+        >.open { 
+            > a {
+                color: $accent-color;
+                background-color: $secondary-color;
+                &:hover {
+                    color: $accent-color;
+                    background-color: $secondary-color;
+                }
+                &:focus {
+                    color: $accent-color;
+                    background-color: $secondary-color;
+                }    
+            }
+
+        }                     
+    }
+    .navbar-toggle {
+        border-color: $secondary-color;
+        &:hover {
+            background-color: $secondary-color;
+            .icon-bar {
+                background-color: $primary-color;
+            }
+        }
+        &:focus {
+            background-color: $secondary-color;
+            .icon-bar {
+                background-color: $primary-color;
+            }
+        }
+        .icon-bar {
+            background-color: $secondary-color;
+        }
+    }
+
+}
+
+/* Navigation : End */
+

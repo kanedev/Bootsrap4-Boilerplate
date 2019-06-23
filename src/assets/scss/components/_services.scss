@@ -1,0 +1,46 @@
+/* 
+ * 6.3 Section: Services 
+ */
+ #services {
+    padding: 2% 0;
+    background-color: $color-white;
+    .service-description
+      {
+          font-size: 14px;
+    color: $color-gray;
+  }
+  
+  .icon-box {
+    z-index: 2;
+    overflow-y: hidden;
+    width: 150px;
+    height: 150px;
+    border-bottom-style: solid;
+    border-bottom-color: $secondary-color;
+    border-bottom-size: 1px;
+    //margin-bottom: 40x;
+  }
+  
+  .icon-box-background {
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    -webkit-transform: translate(25px, 10px)rotate(45deg);
+    -moz-transform: translate(25px, 50px)rotate(45deg);
+    -ms-transform: translate(25px, 10px)rotate(45deg);
+    -o-transform: translate(25px, 10px)rotate(45deg);
+    border-radius: 10px;
+    @include gradient-directional( $secondary-color, $primary-color, 180deg);
+  }
+  
+  .icon {
+    overflow-y: hidden;
+    -webkit-transform: rotate(-45deg) translate(-15px, 15px);
+    -moz-transform: rotate(-45deg) translate(-15px, 15px);
+    -ms-transform: rotate(-45deg) translate(-15px, 15px);
+    -o-transform: rotate(-45deg) translate(-15px, 15px);
+    text-align: center;
+    color: $color-white;
+  }
+  }
+  

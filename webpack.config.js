@@ -12,6 +12,7 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 const PreloadWebpackPlugin = require('preload-webpack-plugin');
 const FixStyleOnlyEntriesPlugin = require("webpack-fix-style-only-entries");
 const HtmlCriticalWebpackPlugin = require("html-critical-webpack-plugin");
+var CompressionPlugin = require("compression-webpack-plugin");
 
 const env = process.env.NODE_ENV;
 const isProduction = env === 'production';
@@ -45,35 +46,6 @@ const config = {
   },
 
 
-  optimization: {
-    minimize:true,
-    usedExports: true,
-  
-    runtimeChunk: 'single',
-    splitChunks: {
-      cacheGroups: {
-        styles: {
-          name: 'vendors-css',
-          test: /\.css$/,
-          chunks: 'all',
-          enforce: true,
-        },
-        vendor: {
-          maxInitialRequests: Infinity,
-          minSize: 0,
-          test: /[\\/]node_modules[\\/]/,
-          name: 'vendors-js',
-          chunks: 'all',
-
-        }
-      }
-    },
-
-    minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})],
-
-
-  }
-  ,
 
   devServer: {
     watchOptions: {
@@ -214,9 +186,9 @@ const config = {
               interlaced: false,
             },
             // the webp option will enable WEBP
-            webp: {
-              quality: 30
-            }
+            // webp: {
+            //   quality: 30
+            // }
           }
         
         },
@@ -256,10 +228,27 @@ const config = {
   plugins: [
 
  
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
+      "window.jQuery": "jquery",
+      // Tether: "tether",
+      // "window.Tether": "tether",
+       Popper: 'popper.js/dist/umd/popper.min.js',
+      Alert: "exports-loader?Alert!bootstrap/js/dist/alert",
+      Button: "exports-loader?Button!bootstrap/js/dist/button",
+      Carousel: "exports-loader?Carousel!bootstrap/js/dist/carousel",
+      Collapse: "exports-loader?Collapse!bootstrap/js/dist/collapse",
+      Dropdown: "exports-loader?Dropdown!bootstrap/js/dist/dropdown",
+      Modal: "exports-loader?Modal!bootstrap/js/dist/modal",
+      Popover: "exports-loader?Popover!bootstrap/js/dist/popover",
+      Scrollspy: "exports-loader?Scrollspy!bootstrap/js/dist/scrollspy",
+      Tab: "exports-loader?Tab!bootstrap/js/dist/tab",
+       Tooltip: "exports-loader?Tooltip!bootstrap/js/dist/tooltip",
+      Util: "exports-loader?Util!bootstrap/js/dist/util",
+    }),
 
 
-
-    //new BundleAnalyzerPlugin(),
  
    new webpack.HashedModuleIdsPlugin(),
 
@@ -274,12 +263,12 @@ const config = {
       template: 'index.html',
       filename: 'index.html',
       minify:{
-        collapseWhitespace: true, 
-        removeComments: true, 
-        removeRedundantAttributes: true, 
-        removeScriptTypeAttributes: true, 
-        removeStyleLinkTypeAttributes: true, 
-        useShortDoctype: true 
+        collapseWhitespace: env === 'development' ? 'false' : 'true', 
+        removeComments: env === 'development' ? 'false' : 'true', 
+        removeRedundantAttributes:  env === 'development' ? 'false' : 'true',  
+        removeScriptTypeAttributes:  env === 'development' ? 'false' : 'true',  
+        removeStyleLinkTypeAttributes:  env === 'development' ? 'false' : 'true',  
+        useShortDoctype:  env === 'development' ? 'false' : 'true',  
 
       },
     }),
@@ -304,7 +293,11 @@ const config = {
     //     blockJSRequests: false,
     //   }
     // }),
-   new FixStyleOnlyEntriesPlugin(), 
+  
+
+
+ //  new CompressionPlugin(),
+
 //       new PreloadWebpackPlugin({
 // // fileWhitelist: [/maincss.css/,/\.\/js\/main.bundle.js/],
 //   rel: 'preload',
@@ -326,6 +319,8 @@ const config = {
     extensions: ['.ts', '.js'],
     alias: {
       'jquery': 'jquery/dist/jquery.slim.min.js',
+      'popper': 'popper.js/dist/umd/popper.min.js',
+     
     }
   },
   //  resolve: {
@@ -335,9 +330,45 @@ const config = {
 };
 
 if (isProduction) {
-  config.plugins.push(  new PurgecssPlugin({ paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true }),}),
-   
-  );
+  config.plugins.push( 
+   new PurgecssPlugin({ paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true }),}),
+   new FixStyleOnlyEntriesPlugin(), 
+   new CompressionPlugin(),
+   new BundleAnalyzerPlugin({
+    analyzerMode: 'static',
+    openAnalyzer : 'false'
+}),
+ );
+
+ config[optimization]= {
+   minimize:true,
+   usedExports: true,
+ 
+   runtimeChunk: 'single',
+   splitChunks: {
+     cacheGroups: {
+       styles: {
+         name: 'vendors-css',
+         test: /\.css$/,
+         chunks: 'all',
+         enforce: true,
+       },
+       vendor: {
+         maxInitialRequests: Infinity,
+         minSize: 0,
+         test: /[\\/]node_modules[\\/]/,
+         name: 'vendors-js',
+         chunks: 'all',
+
+       }
+     }
+   },
+
+   minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})],
+ };
+ 
+
+
 } else { // isDev
   config.devtool = /*'source-map'*/  'inline-source-map';
 }

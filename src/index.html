@@ -1,27 +1,1367 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<html>
 
-     
-   
-    <title>Hello, world!</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mywebapp</title>
+  <!-- <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+  <!--  Place favicon.ico in the root directory -->
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css"> -->
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!--    <link href='https://fonts.googleapis.com/css?family=Ubuntu&subset=latin,greek' rel='stylesheet' type='text/css'> -->
+  <!--        <link href='https://fonts.googleapis.com/css?family=Akronim&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+   <link href="http://fonts.googleapis.com/css?family=Alfa+Slab+One:400" rel="stylesheet" type="text/css">
+   <link href="http://fonts.googleapis.com/css?family=Audiowide:400" rel="stylesheet" type="text/css">     
+   <link href="http://fonts.googleapis.com/css?family=Audiowide:400|Atomic+Age:400" rel="stylesheet" type="text/css">
+   <link href="http://fonts.googleapis.com/css?family=Audiowide:400|Aldrich:400" rel="stylesheet" type="text/css">-->
+  <!-- build:css styles/main.css -->
+  <!-- <link rel="stylesheet" href="styles/main.css"> -->
+  <!-- endbuild -->
+  <!-- build:js scripts/vendor/modernizr.js 
+    <script src="/bower_components/modernizr/modernizr.js"></script>-->
+  <!-- endbuild -->
+</head>
 
+<body>
+  <!--[if lt IE 10]><p class="browserupgrade">You are using an <strong>outdated</strong>browser. Please <a href="http://browsehappy.com/">upgrade your browser</a>to improve your experience.</p><![endif]-->
+  <!--Header : Begin -->
+  <header>
+
+    <!--Carousel : Begin  -->
+    <div id="introduction-slider" data-interval="false" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="item active">
+          <div class="cover-overlay"></div>
+          <div class="cover-image " style="background-image:url('assets/media/image01.jpg');">
+            <div class="carousel-caption">
+              <h2> Site <span class="accent-color"> title 1 </span></h2>
+              <span class="slide-description"> slide description - slide description</span>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="cover-overlay"></div>
+          <div class="cover-image " style="background-image:url('assets/media/image02.jpg');">
+            <div class="carousel-caption">
+              <h2> Site title 2</h2> <span class="slide-description"> slide description - slide description</span>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="cover-overlay"></div>
+          <div class="cover-image " style="background-image:url('assets/media/image03.jpg');">
+            <div class="carousel-caption">
+              <h2> Site title 3</h2> <span class="slide-description"> slide description - slide description</span>
+            </div>
+          </div>
+        </div>
+        <ol class="carousel-indicators">
+          <li data-target="#introduction-slider" data-slide-to="0" class="active"></li>
+          <li data-target="#introduction-slider" data-slide-to="1"></li>
+          <li data-target="#introduction-slider" data-slide-to="2"></li>
+        </ol>
+      </div>
+    </div>
+    <!--Carousel: End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Carousel Bar : Begin  -->
+    <div class="flex-container">
+      <div class="flex-item "><a href="#introduction-slider" data-slide="prev" class="accent-color"><i
+            class="fa fa-chevron-left fa-3x"></i></a><a href="#introduction-slider" data-slide="next"
+          class="accent-color"><i class="fa fa-chevron-right fa-3x"></i></a></div>
+      <div class="flex-item "><i class="fa fa-angle-double-down fa-4x animated infinite bounce accent-color"></i></div>
+    </div>
+    <!--Carousel Bar: End  -->
+
+
+
+
+
+
+
+
+  </header>
+  <!-- Header : End -->
+
+  <!--Navbar  : Begin -->
+  <!-- <nav>
+      <div id="custom-bootstrap-menu" class="navbar navbar-default navbar-static-top">
+        <div class="container">
+          <div class="navbar-header"> <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>      
+              <a class="navbar-brand" href="#"><h1>Walid</h1></a></div>
+          <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"> <a href="#">Home</a></li>
+              <li> <a href="#">Menu 1</a></li>
+              <li> <a href="#">Menu 2</a></li>
+              <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu 3 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+              <li> <a href="#">Menu 4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav> -->
+  <!--Navbar : End -->
+
+  <!--Sections : Begin -->
+  <main>
+    <!--  Section : About : Begin -->
+    <section id="about">
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
+            <div class="section-head">
+
+              <h3>About us</h3>
+              <p class="section-subtitle">We are lucky to service people like you</p>
+              <hr />
+            </div>
+            <div class="section-body">
+
+              <div class="row justify-content-center">
+
+
+                <div class="col col-sm-12 col-md-11 col-lg-9 col-xl-9">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna magna . Ut enim ad minim minim veniam,ncididunt ut labore et dolore magna aliqua.
+                  </p>
+                  <br />
+                </div>
+              </div>
+
+              <div class="row">
+
+                <div class="col-lg-4 col-xl-4 col-md-4 col-sm-12 col-12">
+                  <img src="assets/media/ideas.svg" alt="ideas" class="img-fluid mx-auto d-block img-about">
+                  <p class="legend">Creative ideas</p>
+                </div>
+                <div class="col-lg-4 col-xl-4 col-md-4 col-sm-12 col-12">
+                  <img src="assets/media/devices.svg" alt="ideas" class="img-fluid mx-auto d-block img-about">
+                  <p class="legend">Moderne work</p>
+                </div>
+                <div class="col-lg-4 col-xl-4 col-md-4 col-sm-12 col-12">
+                  <img src="assets/media/support.svg" alt="ideas" class="img-fluid mx-auto d-block img-about">
+                  <p class="legend">support</p>
+                </div>
+
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!--  Section : About : End -->
+
+
+
+    <!--  Section : Statistics : Begin -->
+    <section id="statistic">
+      <div class="statistic-overlay">
+        <div class="container">
+          <div class="row">
+         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
+            <h4 class="accent-color">Many reasons to love our work </h4>
+            </div>
+          </div>
+          <div class="row">
+
+            <div class="col-lg-3 col-xl-3 col-md-6 col-sm-6 col-6 secondary-color">
+              <i class="fa fa-group fa-4x "></i>
+              <p class="title-legend primary-color-light">529</p>
+              <p class="legend accent-color">clients</p>
+            </div>
+
+            <div class="col-lg-3 col-xl-3 col-md-6 col-sm-6 col-6 secondary-color">
+              <i class="fa fa-object-group fa-4x "></i>
+              <p class="title-legend primary-color-light">123</p>
+              <p class="legend accent-color">designers</p>
+            </div>
+
+            <div class="col-lg-3 col-xl-3 col-md-6 col-sm-6 col-6 secondary-color">
+              <i class="fa fa-code fa-4x "></i>
+              <p class="title-legend primary-color-light">456</p>
+              <p class="legend accent-color">coders</p>
+            </div>
+
+            <div class="col-lg-3 col-xl-3 col-md-6 col-sm-6 col-6 secondary-color">
+              <i class="fa fa-heartbeat fa-4x"></i>
+              <p class="title-legend primary-color-light">1000+</p>
+              <p class="legend accent-color">testers</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  Section : Statistics : End -->
+
+    <!--  Section : Services : Begin -->
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+
+            <h3>Our Services</h3>
+            <p class="section-subtitle">Some of our best services</p>
+            <hr />
+
+
+
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-xl-3 col-md-6 col-sm-6 col-12 ">
+            <div class="icon-box mx-auto d-block">
+              <div class="icon-box-background">
+                <div class="icon text-center"> <i class="fa fa-code fa-4x "></i> </div>
+              </div>
+            </div>
+
+            <p class="legend">web dev</p>
+            <p class="service-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            </p>
+
+          </div>
+          <div class="col-lg-3 col-xl-3 col-md-6 col-sm-6 col-12  ">
+            <div class="icon-box mx-auto d-block">
+              <div class="icon-box-background">
+                <div class="icon text-center"> <i class="fa fa-mobile fa-4x "></i> </div>
+              </div>
+            </div>
+
+            <p class="legend">mobile dev</p>
+            <p class="service-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            </p>
+
+          </div>
+          <div class="col-lg-3 col-xl-3 col-md-6 col-sm-6 col-12 ">
+            <div class="icon-box mx-auto d-block">
+              <div class="icon-box-background">
+                <div class="icon text-center"> <i class="fa fa-edit fa-4x "></i> </div>
+              </div>
+            </div>
+
+            <p class="legend">web design</p>
+            <p class="service-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            </p>
+
+          </div>
+          <div class="col-lg-3 col-xl-3 col-md-6 col-sm-6 col-12 ">
+            <div class="icon-box mx-auto d-block">
+              <div class="icon-box-background">
+                <div class="icon text-center"> <i class="fa fa-link fa-4x "></i> </div>
+              </div>
+            </div>
+
+            <p class="legend">seo</p>
+            <p class="service-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  Section : Services : End -->
+
+    <!--  Section : Works : Begin -->
+    <section id="works">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-head">
+              <h3 class="secondary-color">Our works</h3>
+              <p class="section-subtitle">Some of our best works</p>
+              <hr />
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12 centered-pills">
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#home" role="tab">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#profile" role="tab">Profile</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#messages" role="tab">Messages</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#settings" role="tab">Settings</a>
+    </li>
+  </ul>
+  
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div class="tab-pane active" id="home" role="tabpanel">...</div>
+    <div class="tab-pane" id="profile" role="tabpanel">...</div>
+    <div class="tab-pane" id="messages" role="tabpanel">...</div>
+    <div class="tab-pane" id="settings" role="tabpanel">...</div>
+  </div>
+
+
+
+
+
+
+
+            <ul class="nav nav-pills ">
+              <li class="active"><a data-toggle="pill" href="#home">Home</a></li>
+              <li><a data-toggle="pill" href="#menu1">Menu 1</a></li>
+              <li><a data-toggle="pill" href="#menu2">Menu 2</a></li>
+              <li><a data-toggle="pill" href="#menu3">Menu 3</a></li>
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="tab-content">
+              <div id="home" class="tab-pane fade in active">
+
+                <div class="row work-content">
+                  <div class="col-md-3 col-sm-6 col-12 ">
+                    <div class="work-box">
+                      <a href="" class="">
+                        <img src="assets/media/image01.jpg" class="work-img img-fluid" />
+                        <div class="work-box-overlay text-center">
+                          <i class="fa fa-search-plus fa-3x accent-color"></i>
+                        </div>
+                        <div class="work-img-desc">
+                          <p> Work title </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-12 ">
+                    <div class="work-box">
+                      <a href="" class="">
+                        <img src="assets/media/image03.jpg" class="work-img img-fluid" />
+                        <div class="work-box-overlay text-center">
+                          <i class="fa fa-search-plus fa-3x accent-color"></i>
+                        </div>
+                        <div class="work-img-desc">
+                          <p> Work title </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-12 ">
+                    <div class="work-box">
+                      <a href="" class="">
+                        <img src="assets/media/image03.jpg" class="work-img img-fluid" />
+                        <div class="work-box-overlay text-center">
+                          <i class="fa fa-search-plus fa-3x accent-color"></i>
+                        </div>
+                        <div class="work-img-desc">
+                          <p> Work title </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-12 ">
+                    <div class="work-box">
+                      <a href="" class="">
+                        <img src="assets/media/image01.jpg" class="work-img img-fluid" />
+                        <div class="work-box-overlay text-center">
+                          <i class="fa fa-search-plus fa-3x accent-color"></i>
+                        </div>
+                        <div class="work-img-desc">
+                          <p> Work title </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="row work-content">
+                  <div class="col-md-3 col-sm-6 col-12 ">
+                    <div class="work-box">
+                      <a href="" class="">
+                        <img src="assets/media/image01.jpg" class="work-img img-fluid" />
+                        <div class="work-box-overlay text-center">
+                          <i class="fa fa-search-plus fa-3x accent-color"></i>
+                        </div>
+                        <div class="work-img-desc">
+                          <p> Work title </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-12 ">
+                    <div class="work-box">
+                      <a href="" class="">
+                        <img src="assets/media/image03.jpg" class="work-img img-fluid" />
+                        <div class="work-box-overlay text-center">
+                          <i class="fa fa-search-plus fa-3x accent-color"></i>
+                        </div>
+                        <div class="work-img-desc">
+                          <p> Work title </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-12 ">
+                    <div class="work-box">
+                      <a href="" class="">
+                        <img src="assets/media/image03.jpg" class="work-img img-fluid" />
+                        <div class="work-box-overlay text-center">
+                          <i class="fa fa-search-plus fa-3x accent-color"></i>
+                        </div>
+                        <div class="work-img-desc">
+                          <p> Work title </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-12 ">
+                    <div class="work-box">
+                      <a href="" class="">
+                        <img src="assets/media/image01.jpg" class="work-img img-fluid" />
+                        <div class="work-box-overlay text-center">
+                          <i class="fa fa-search-plus fa-3x accent-color"></i>
+                        </div>
+                        <div class="work-img-desc">
+                          <p> Work title </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div id="menu1" class="tab-pane fade">
+                <div class="row work-content">
+                  <div class="col-md-3 col-sm-6 col-12 ">
+                    <div class="work-box">
+                      <a href="" class="">
+                        <img src="assets/media/image01.jpg" class="work-img img-fluid" />
+                        <div class="work-box-overlay text-center">
+                          <i class="fa fa-search-plus fa-3x accent-color"></i>
+                        </div>
+                        <div class="work-img-desc">
+                          <p> Work title </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-12 ">
+                    <div class="work-box">
+                      <a href="" class="">
+                        <img src="assets/media/image03.jpg" class="work-img img-fluid" />
+                        <div class="work-box-overlay text-center">
+                          <i class="fa fa-search-plus fa-3x accent-color"></i>
+                        </div>
+                        <div class="work-img-desc">
+                          <p> Work title </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-12 ">
+                    <div class="work-box">
+                      <a href="" class="">
+                        <img src="assets/media/image03.jpg" class="work-img img-fluid" />
+                        <div class="work-box-overlay text-center">
+                          <i class="fa fa-search-plus fa-3x accent-color"></i>
+                        </div>
+                        <div class="work-img-desc">
+                          <p> Work title </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-12 ">
+                    <div class="work-box">
+                      <a href="" class="">
+                        <img src="assets/media/image01.jpg" class="work-img img-fluid" />
+                        <div class="work-box-overlay text-center">
+                          <i class="fa fa-search-plus fa-3x accent-color"></i>
+                        </div>
+                        <div class="work-img-desc">
+                          <p> Work title </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div id="menu2" class="tab-pane fade">
+                <div class="row work-content">
+                  <div class="col-md-3 col-sm-6 col-12 ">
+                    <div class="work-box">
+                      <a href="" class="">
+                        <img src="assets/media/image01.jpg" class="work-img img-fluid" />
+                        <div class="work-box-overlay text-center">
+                          <i class="fa fa-search-plus fa-3x accent-color"></i>
+                        </div>
+                        <div class="work-img-desc">
+                          <p> Work title </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-12 ">
+                    <div class="work-box">
+                      <a href="" class="">
+                        <img src="assets/media/image03.jpg" class="work-img img-fluid" />
+                        <div class="work-box-overlay text-center">
+                          <i class="fa fa-search-plus fa-3x accent-color"></i>
+                        </div>
+                        <div class="work-img-desc">
+                          <p> Work title </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-12 ">
+                    <div class="work-box">
+                      <a href="" class="">
+                        <img src="assets/media/image03.jpg" class="work-img img-fluid" />
+                        <div class="work-box-overlay text-center">
+                          <i class="fa fa-search-plus fa-3x accent-color"></i>
+                        </div>
+                        <div class="work-img-desc">
+                          <p> Work title </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-12 ">
+                    <div class="work-box">
+                      <a href="" class="">
+                        <img src="assets/media/image01.jpg" class="work-img img-fluid" />
+                        <div class="work-box-overlay text-center">
+                          <i class="fa fa-search-plus fa-3x accent-color"></i>
+                        </div>
+                        <div class="work-img-desc">
+                          <p> Work title </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div id="menu3" class="tab-pane fade">
+                <div class="row work-content">
+                  <div class="col-md-3 col-sm-6 col-12 ">
+                    <div class="work-box">
+                      <a href="" class="">
+                        <img src="assets/media/image01.jpg" class="work-img img-fluid" />
+                        <div class="work-box-overlay text-center">
+                          <i class="fa fa-search-plus fa-3x accent-color"></i>
+                        </div>
+                        <div class="work-img-desc">
+                          <p> Work title </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-12 ">
+                    <div class="work-box">
+                      <a href="" class="">
+                        <img src="assets/media/image03.jpg" class="work-img img-fluid" />
+                        <div class="work-box-overlay text-center">
+                          <i class="fa fa-search-plus fa-3x accent-color"></i>
+                        </div>
+                        <div class="work-img-desc">
+                          <p> Work title </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-12 ">
+                    <div class="work-box">
+                      <a href="" class="">
+                        <img src="assets/media/image03.jpg" class="work-img img-fluid" />
+                        <div class="work-box-overlay text-center">
+                          <i class="fa fa-search-plus fa-3x accent-color"></i>
+                        </div>
+                        <div class="work-img-desc">
+                          <p> Work title </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-12 ">
+                    <div class="work-box">
+                      <a href="" class="">
+
+                        <div class="work-box-overlay text-center">
+                          <i class="fa fa-search-plus fa-3x accent-color"></i>
+                        </div>
+                        <div class="work-img-desc">
+                          <p> Work title </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </section>
+    <!--  Section : Works : End -->
+
+    <!--  Section : Testimonials : Begin -->
+    <section id="testimonials">
+      <div class="testimonials-overlay">
+        <div class="container">
+
+          <div class="row">
+
+            <h4 class="accent-color">What poeple say about us</h4>
+            <br />
+
+          </div>
+
+
+          <div class="row">
+
+            <div class="col-md-8 col-md-offset-2 col-sm-12  col-12">
+              <div class="section-body ">
+                <div class="testimonials-content">
+                  <div id="carousel-testimonials" class="carousel slide ">
+
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                      <!-- Quote 0 -->
+                      <div class="item active ">
+
+                        <div class="col-lg-6 col-sm-6 col-12">
+                          <img src="assets/media/image03.jpg" class="img-fluid" />
+                        </div>
+                        <div class="col-lg-6 col-sm-6 col-12">
+                          <p class="testimonial-text">Aznarb, it's an elegant and ideal solution for personal and small
+                            business websites, absolutely stunning and helpful support team to answer any questions you
+                            may have. </p>
+                          <b class="secondary-color-light">- Camille Sanchez</b>
+                        </div>
+
+
+                      </div>
+
+                      <!-- Quote 1 -->
+                      <div class="item">
+
+                        <div class="col-lg-6 col-sm-6 col-12">
+                          <img src="assets/media/image03.jpg" class="img-fluid" />
+                        </div>
+                        <div class="col-lg-6 col-sm-6 col-12">
+                          <p class="testimonial-text">I'm a front-end developer, when someone ask me a mobile responsive
+                            site, I haven't found an easier way than Aznarb theme.
+                            Aznarb has been and still is my favorite theme ... Unique design, high quality theme and
+                            very solid support. </p>
+                          <b class="secondary-color-light">- Alice Rousseau</b>
+                        </div>
+
+
+                      </div>
+
+                      <!-- Quote 2 -->
+                      <div class="item  ">
+
+                        <div class="col-lg-6 col-sm-6 col-12">
+                          <img src="assets/media/image03.jpg" class="img-fluid" />
+                        </div>
+                        <div class="col-lg-6 col-sm-6 col-12">
+                          <p class="testimonial-text">It's an elegant and ideal solution for personal and small business
+                            websites, absolutely stunning and helpful support team to answer any questions you may have.
+                          </p>
+                          <b class="secondary-color-light">- Camille Sanchez</b>
+                        </div>
+
+
+                      </div>
+
+                      <!-- Quote 3 -->
+                      <div class="item ">
+
+                        <div class="col-lg-6 col-sm-6 col-12">
+                          <img src="assets/media/image03.jpg" class="img-fluid" />
+                        </div>
+                        <div class="col-lg-6 col-sm-6 col-12">
+                          <p class="testimonial-text">I love your work ! Vital to my Team ! Our business went from "bad"
+                            to "WOW!" ! Thank you ! </p>
+                          <b class="secondary-color-light">- Chloé Cartier</b>
+                        </div>
+
+
+                      </div>
+
+
+                      <!-- Quote 4 -->
+                      <div class="item">
+
+                        <div class="col-lg-6 col-sm-6 col-12">
+                          <img src="assets/media/image03.jpg" class="img-fluid" />
+                        </div>
+                        <div class="col-lg-6 col-sm-6 col-12">
+                          <p class="testimonial-text">My experience with template is absolutely positive.. This theme is
+                            beautifully designed and well documented. I'm waiting your next theme, to start a new
+                            project together. </p>
+                          <b class="secondary-color-light">- Jacqueline Dupon</b>
+                        </div>
+
+
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+    <!--  Section : Testimonials : End -->
+
+
+    <!--  Section : Fonctions : Begin -->
+    <section id="fonctions">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h3>Our Fonctions</h3>
+            <p class="section-subtitle">Some of our best fonctions</p>
+            <hr />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6  col-sm-6  col-12 ">
+            <div class="fonction-content">
+              <div class="icon-background mx-auto d-block">
+                <div class="icon text-center"> <i class="fa fa-code fa-5x "></i> </div>
+              </div>
+
+              <h4 class="accent-color">web dev</h4>
+              <p class="fonction-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod </p>
+            </div>
+          </div>
+          <div class="col-lg-6  col-sm-6  col-12 ">
+            <img src="assets/media/image02.jpg" class="work-img img-fluid" />
+          </div>
+        </div>
+        <br>
+        <hr /> <br>
+        <div class="row">
+          <div class="col-lg-6  col-sm-6  col-12 ">
+            <img src="assets/media/image01.jpg" class="work-img img-fluid" />
+          </div>
+          <div class="col-lg-6  col-sm-6  col-12 ">
+            <div class="fonction-content">
+              <div class="icon-background mx-auto d-block">
+                <div class="icon text-center"> <i class="fa fa-mobile-phone fa-5x "></i> </div>
+              </div>
+
+              <h4 class="accent-color">dev mobile</h4>
+              <p class="fonction-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  Section : Fonctions : End -->
+
+
+    <!--  Section : CTA : Begin -->
+    <section id="CTA">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-10  col-sm-9  col-12 ">
+            <div class="fonction-content">
+              <p class="fonction-description"> This project is the perfect choice to showcase your services or app</p>
+            </div>
+          </div>
+
+          <div class="col-md-2  col-sm-3  col-12 ">
+            <a class="btn btn-accent-color  btn-sharp btn-lg "> Read more ...</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  Section : CTA : End -->
+
+    <!--  Section : Reasons : Begin -->
+
+    <section id="reasons">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-head">
+              <h3 class="secondary-color">Many reasons</h3>
+              <p class="section-subtitle">Why will you love our work ?</p>
+              <hr />
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 col-sm-6 col-12">
+
+            <p class="section-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit anim id est laborum.
+            </p>
+
+          </div>
+          <div class="col-lg-6 col-sm-6 col-12">
+
+            <div class="col-lg-6 col-sm-6 col-12">
+              <div class="reasons-table">
+                <div class="reasons-table-header">
+                  <div class=" ">
+                    <div class="text-center"> <i class="fa fa-code fa-5x"></i>
+                      <p class="primary-color-light">web dev</p>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <div class="reasons-table-body">90%
+
+
+                  <canvas id="myChart" width="400" height="400"></canvas>
+
+
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-sm-6 col-12">
+              <div class="reasons-table">
+                <div class="reasons-table-header">
+                  <div class=" ">
+                    <div class="text-center"> <i class="fa fa-mobile fa-5x"></i>
+                      <p class="primary-color-light">mobile dev</p>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <div class="reasons-table-body">70%
+                  <canvas id="myChart2" width="400" height="400"></canvas>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+      </div>
+    </section>
+    <!--  Section : Reasons : End -->
+
+    <!--  Section : Plans : Begin -->
+    <section id="plans">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-head">
+              <h3 class="">Plans</h3>
+              <p class="section-subtitle">Some of our greatest plans</p>
+              <hr />
+              <br />
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-12 ">
+            <div class="plan">
+              <div class="plan-header">
+                <h4>STARTER</h4>
+                <p>From <span>$00</span> month</p>
+              </div>
+              <div class="plan-body">
+                <div class="cel1">
+                  <p>1 GB Storage</p>
+                </div>
+                <div class="cel2">
+                  <p>10 GB Bandwith</p>
+                </div>
+                <div class="cel1">
+                  <p>100 Email Account</p>
+                </div>
+                <div class="cel2">
+                  <p>24/24 Support</p>
+                </div>
+                <div class="cel1">
+                  <p>1 GB Storage</p>
+                </div>
+                <div class="cel2">
+                  <p>10 GB Bandwith</p>
+                </div>
+                <div class="cel1">
+                  <p>100 Email Account</p>
+                </div>
+                <div class="cel2">
+                  <p>24/24 Support</p>
+                </div>
+              </div>
+              <div class="plan-footer">
+                <a class="btn btn-primary-color  btn-sharp  text-uppercase ">Read more ..</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-12 ">
+            <div class="plan">
+              <div class="plan-header">
+                <h4>BUSINESS</h4>
+                <p>From <span>$25</span> month</p>
+              </div>
+              <div class="plan-body">
+                <div class="cel1">
+                  <p>1 GB Storage</p>
+                </div>
+                <div class="cel2">
+                  <p>10 GB Bandwith</p>
+                </div>
+                <div class="cel1">
+                  <p>100 Email Account</p>
+                </div>
+                <div class="cel2">
+                  <p>24/24 Support</p>
+                </div>
+                <div class="cel1">
+                  <p>1 GB Storage</p>
+                </div>
+                <div class="cel2">
+                  <p>10 GB Bandwith</p>
+                </div>
+                <div class="cel1">
+                  <p>100 Email Account</p>
+                </div>
+                <div class="cel2">
+                  <p>24/24 Support</p>
+                </div>
+              </div>
+              <div class="plan-footer">
+                <a class="btn btn-primary-color  btn-sharp  text-uppercase ">Read more ..</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-12 ">
+            <div class="plan">
+              <div class="plan-header">
+                <h4>EXPERIENCE</h4>
+                <p>From <span>$50</span> month</p>
+              </div>
+              <div class="plan-body">
+                <div class="cel1">
+                  <p>1 GB Storage</p>
+                </div>
+                <div class="cel2">
+                  <p>10 GB Bandwith</p>
+                </div>
+                <div class="cel1">
+                  <p>100 Email Account</p>
+                </div>
+                <div class="cel2">
+                  <p>24/24 Support</p>
+                </div>
+                <div class="cel1">
+                  <p>1 GB Storage</p>
+                </div>
+                <div class="cel2">
+                  <p>10 GB Bandwith</p>
+                </div>
+                <div class="cel1">
+                  <p>100 Email Account</p>
+                </div>
+                <div class="cel2">
+                  <p>24/24 Support</p>
+                </div>
+              </div>
+              <div class="plan-footer">
+                <a class="btn btn-primary-color  btn-sharp  text-uppercase ">Read more ..</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-12 ">
+            <div class="plan">
+              <div class="plan-header">
+                <h4>EXPERT</h4>
+                <p>From <span>$99</span> month</p>
+              </div>
+              <div class="plan-body">
+                <div class="cel1">
+                  <p>1 GB Storage</p>
+                </div>
+                <div class="cel2">
+                  <p>10 GB Bandwith</p>
+                </div>
+                <div class="cel1">
+                  <p>100 Email Account</p>
+                </div>
+                <div class="cel2">
+                  <p>24/24 Support</p>
+                </div>
+                <div class="cel1">
+                  <p>1 GB Storage</p>
+                </div>
+                <div class="cel2">
+                  <p>10 GB Bandwith</p>
+                </div>
+                <div class="cel1">
+                  <p>100 Email Account</p>
+                </div>
+                <div class="cel2">
+                  <p>24/24 Support</p>
+                </div>
+              </div>
+              <div class="plan-footer">
+                <a class="btn btn-primary-color  btn-sharp  text-uppercase ">Read more ..</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!--  Section : Plans : End -->
+
+
+
+    <!--  Section : Parteners : Begin -->
+    <section id="partners">
+      <div class="partners-overlay">
+        <div class="container">
+
+
+          <h4 class="accent-color">Some of our best partners</h4>
+
+
+          <div class="row">
+            <div class="col-md-3  col-sm-6 col-12 ">
+              <img alt="partner" class="img-fluid" src="assets/media/partners/1.png">
+            </div>
+            <div class="col-md-3  col-sm-6 col-12 ">
+              <img alt="partner" class="img-fluid" src="assets/media/partners/4.png">
+            </div>
+            <div class="col-md-3  col-sm-6 col-12 ">
+              <img alt="partner" class="img-fluid" src="assets/media/partners/5.png">
+            </div>
+            <div class="col-md-3  col-sm-6 col-12 ">
+              <img alt="partner" class="img-fluid" src="assets/media/partners/6.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  Section : Parteners : End -->
+    <!--  Section : Blog : Begin -->
+    <section id="blog">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-head">
+              <h3 class="secondary-color">Latest Posts</h3>
+              <p class="section-subtitle">Some of our latest posts</p>
+              <hr />
+              <br />
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="col-md-3 col-sm-6 col-12 ">
+            <div class="blog-post">
+              <img alt="image-blog-post" class="img-fluid" src="assets/media/blog/image04.jpg">
+
+              <h5>Title blog post</h5>
+              <p class="post-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore.
+              </p>
+              <div class="post-footer "><a class="btn btn-primary-color  btn-sharp  text-uppercase ">Read more ..</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-12 ">
+            <div class="blog-post">
+              <img alt="image-blog-post" class="img-fluid" src="assets/media/blog/image05.jpg">
+
+              <h5>Title blog post</h5>
+              <p class="post-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore.
+              </p>
+              <div class="post-footer "><a class="btn btn-primary-color  btn-sharp  text-uppercase ">Read more ..</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-12 ">
+            <div class="blog-post">
+              <img alt="image-blog-post" class="img-fluid" src="assets/media/blog/image06.jpg">
+
+              <h5>Title blog post</h5>
+              <p class="post-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore.
+              </p>
+              <div class="post-footer "><a class="btn btn-primary-color  btn-sharp  text-uppercase ">Read more ..</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-12 ">
+            <div class="blog-post">
+              <img alt="image-blog-post" class="img-fluid" src="assets/media/blog/image07.jpg">
+
+              <h5>Title blog post</h5>
+              <p class="post-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore.
+              </p>
+              <div class="post-footer "><a class="btn btn-primary-color  btn-sharp  text-uppercase ">Read more ..</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!--  Section : Blog : End -->
+
+    <!--  Section : Team : Begin -->
+    <section id="team">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-12">
+            <h3>Our Team</h3>
+            <p class="section-subtitle">We are happy to present our lovely team</p>
+            <hr />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-xl-4 col-md-4  col-sm-4 col-12 ">
+            <img alt="" class="img-circle" src="assets/media/team/1.jpg">
+            <h4>Designer</h4>
+            <p>Alice Auguste</p>
+            <ul class="list-unstyled list-inline">
+              <li><a href="#"><i class="fa fa-3x fa-facebook-square"></i></a></li>
+              <li><a href="#"><i class="fa fa-3x fa-linkedin-square "></i></a></li>
+              <li><a href="#"><i class="fa fa-3x fa-twitter-square "></i></a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-xl-4 col-md-4  col-sm-4 col-12 ">
+            <img alt="" class="img-circle" src="assets/media/team/2.jpg">
+            <h4>Developer</h4>
+            <p>John Doe</p>
+            <ul class="list-unstyled list-inline">
+              <li><a href="#"><i class="fa fa-3x fa-facebook-square"></i></a></li>
+              <li><a href="#"><i class="fa fa-3x fa-linkedin-square "></i></a></li>
+              <li><a href="#"><i class="fa fa-3x fa-twitter-square "></i></a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-xl-4 col-md-4  col-sm-4 col-12 ">
+            <img alt="" class="img-circle" src="assets/media/team/3.jpg">
+            <h4>Marketer</h4>
+            <p>Diana Nash</p>
+            <ul class="list-unstyled list-inline">
+              <li><a href="#"><i class="fa fa-3x fa-facebook-square"></i></a></li>
+              <li><a href="#"><i class="fa fa-3x fa-linkedin-square "></i></a></li>
+              <li><a href="#"><i class="fa fa-3x fa-twitter-square "></i></a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!--  Section : Parteners : End -->
+
+
+  </main>
+  <!--Sections: End -->
+
+  <!--Footer : Begin -->
+  <footer>
 
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1>Hello, world!</h1> 
+          <div class="footer-head">
+            <h3 class="secondary-color">Contact us</h3>
+            <p class="footer-subtitle text-center">Love to hear from you</p>
+            <hr />
+            <br />
+          </div>
         </div>
-        
       </div>
-    </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-   </body>
+      <div class="row">
+        <div class="col-lg-6 col-sm-12 col-12 ">
+          <h5>Our contact info :</h5>
+
+          <ul class="list-unstyled">
+            <li><i class="fa fa-2x fa-home secondary-color"></i><span class="contact-info-label"> Address : </span>
+              <span class="contact-info"> 20 rue Saint Denis 75001 Paris </span></li>
+
+            <li><i class="fa fa-2x fa-phone secondary-color"></i><span class="contact-info-label"> Phone : </span> <span
+                class="contact-info"> (+33) 0123456789 </span></li>
+            <li><i class="fa fa-2x fa-print secondary-color"></i><span class="contact-info-label"> Fax : </span> <span
+                class="contact-info"> (+33) 0123456789 </span></li>
+            <li><i class="fa fa-2x fa-envelope secondary-color"></i><span class="contact-info-label"> Email : </span>
+              <span class="contact-info"> youraddress@inboxmail.com </span></li>
+            <li>
+              <ul class="list-unstyled list-inline text-center">
+                <li><a href="#"><i class="fa fa-3x fa-facebook-square  secondary-color"></i></a></li>
+                <li><a href="#"><i class="fa fa-3x fa-linkedin-square  secondary-color"></i></a></li>
+                <li><a href="#"><i class="fa fa-3x fa-twitter-square  secondary-color"></i></a></li>
+              </ul>
+            </li>
+
+
+          </ul>
+
+
+        </div>
+        <div class="col-lg-6 col-sm-12 col-12 ">
+          <h5>We are waiting to hear from you :</h5>
+          <form id="contactform" class="" action="send.php" method="post">
+
+
+            <div class="row">
+              <div class="col-lg-6 col-sm-12 col-12">
+                <div class="form-group">
+                  <label for="firstname">First name:</label>
+                  <input type="text" class="form-control" id="firstname" placeholder="Enter your first name"
+                    name="firstname">
+                </div>
+              </div>
+              <div class="col-lg-6 col-sm-12 col-12">
+                <div class="form-group">
+                  <label for="lastname">Last name:</label>
+                  <input type="text" class="form-control" id="lastname" placeholder="Enter your last name"
+                    name="lastname">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-12">
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-12">
+                <div class="form-group">
+                  <label for="message">Your message:</label>
+                  <textarea class="form-control" id="message" name="message"
+                    placeholder="Enter your message ..."></textarea>
+                </div>
+              </div>
+            </div>
+
+          </form>
+
+
+        </div>
+      </div>
+
+
+
+    </div>
+    <hr>
+
+    <p class="text-center primary-color-light">Copyright 2017 </p>
+  </footer>
+  <!--Footer: End -->
+
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <!-- <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+                      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+                      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+                      e.src='https://www.google-analytics.com/analytics.js';
+                      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+                      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>-->
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <!-- <script src="/bower_components/jquery/dist/jquery.js"></script> -->
+  <!-- <script src="/bower_components/Chart.js/dist/Chart.js"></script> -->
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:js scripts/bootstrap.js -->
+  <!-- <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script> -->
+  <!-- endbuild -->
+  <!-- build:js scripts/main.js -->
+  <!-- <script src="scripts/main.js"></script> -->
+  <!-- endbuild -->
+</body>
+
 </html>

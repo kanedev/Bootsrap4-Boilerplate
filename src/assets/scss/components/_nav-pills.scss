@@ -1,0 +1,29 @@
+  
+@mixin pills-nav{
+.nav-pills > li > a {
+        font-family: $font-secondary;
+        font-size: 18px;
+        position: relative;
+        display: block;
+        padding: 6px 11px;
+        text-transform: uppercase;
+        color: $primary-color;
+        border-radius: 0;
+        background-color: $primary-color-light;
+    }
+
+    .nav-pills > li > a:hover,
+        .nav-pills > li > a:focus {
+        text-decoration: none;
+        color: $accent-color;
+        background-color: $secondary-color-light;
+    }
+
+    .nav-pills > li.active > a,
+    .nav-pills > li.active > a:hover,
+        .nav-pills > li.active > a:focus {
+        color: $accent-color;
+        background-color: $secondary-color-light;
+    }
+   
+    }

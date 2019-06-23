@@ -1,0 +1,98 @@
+footer {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: $primary-color;
+   
+  hr
+    {
+        width: 25%;
+        color: $primary-color-light;
+        border-color: $primary-color-light;
+        background-color: $primary-color-light;
+}
+
+
+    h5{
+        margin-bottom: 5px;
+        font-size: 1.2em;
+        font-weight: 500;
+        text-align: left; 
+        line-height: 1.2em;
+        color:  $secondary-color-light; 
+    }
+
+ 
+
+        .contact-info {
+            color: $color-white;
+            font-size: 1em;
+            font-weight: 100;
+            text-align: left;
+            line-height: 1em;
+             
+        }
+    
+.contact-info-label {
+        text-align: left; 
+        font-weight: bold;
+        font-family: $font-secondary;
+        color: $primary-color-light;
+}
+ul > li {
+    padding-top: 10px;
+}
+
+
+
+.footer-subtitle {
+  font-family: $font-secondary;
+  font-size: 30px;
+  font-weight: 400;
+  color: $primary-color-light;
+        /* Landscape tablets and medium desktops */
+  @media (min-width: 992px) and (max-width: 1199px)
+        {
+            font-size: 30px;
+  font-weight: 400;
+}
+
+        /* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  font-size: 20px;
+            font-weight: 300;
+}
+
+        /* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  font-size: 20px;
+            font-weight: 200;
+}
+
+        /* Portrait phones and smaller */
+@media (max-width: 480px) {
+  font-size: 18px;
+            font-weight: 100;
+}
+    }
+
+.footer-description {
+  font-size: 18px;
+  text-align: justify;
+  color: $primary-color;
+}
+
+
+
+label {
+        text-align: left; 
+        font-weight: bold;
+        font-family: $font-secondary;
+        color: $primary-color-light;
+}
+
+
+
+
+
+}
+

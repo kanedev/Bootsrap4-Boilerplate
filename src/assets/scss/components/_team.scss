@@ -1,0 +1,32 @@
+/* 
+ * 6.10 Section:  Team
+ */
+ #team {
+    padding: 2% 0;
+    background-color: $color-white;
+    p
+    {
+        margin: 0;
+    }
+
+    h4 {
+        font-size: 1.6em;
+        line-height: 0;
+        padding-top: 15px;
+        padding-bottom: 0;
+    }
+
+    img {
+        max-width: 200px !important;
+        max-height: 200px !important;
+    }
+
+    a {
+        color: $secondary-color;
+        &:hover
+            {
+            color: $accent-color;
+        }
+    }
+
+}

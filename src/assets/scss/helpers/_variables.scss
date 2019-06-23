@@ -1,0 +1,51 @@
+/*
+Colors shema
+*/
+
+//Brand colors
+
+$primary-color:#432F44;
+$primary-color-dark:#371638;
+$primary-color-light:#8A688C;
+//----------------------------
+$secondary-color:#a7425c;
+$secondary-color-dark:#401923;
+$secondary-color-light:#ea5455;
+//----------------------------
+$accent-color:#ffd460;
+
+//Base colors
+$color-white : #fff ;
+$color-black : #4c4c4c;
+$color-gray :  #808080;
+$color-gray-light :  #9e9e9e;
+$color-shadow : #403a3e ;
+
+// Navbar
+$dropdown :true;
+
+//Input border radius
+$radius:0px;
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-caret:                                true !default;
+$enable-rounded:                              true !default;
+$enable-shadows:                              true !default;
+$enable-gradients:                            true !default;
+$enable-transitions:                          true !default;
+$enable-prefers-reduced-motion-media-query:   true !default;
+$enable-hover-media-query:                    false !default; // Deprecated, no longer affects any compiled CSS
+$enable-grid-classes:                         true !default;
+$enable-pointer-cursor-for-buttons:           true !default;
+$enable-print-styles:                         true !default;
+$enable-responsive-font-sizes:                true !default;
+$enable-validation-icons:                     true !default;
+$enable-deprecation-messages:                 true !default;
+
+
+
+
+

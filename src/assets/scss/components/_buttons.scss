@@ -1,0 +1,59 @@
+// class buttons
+// Colors class 
+// I use boostrap'mixin : button-variant($color, $background, $border)
+ .btn-primary-color {
+  //     @include button-variant($secondary-color, $primary-color, darken($primary-color-dark,30%));
+    @include button-variant($secondary-color-light, $primary-color,$primary-color-light);
+     color:$primary-color-light;
+     
+}
+
+ .btn-primary-color-dark {
+    color:$primary-color-dark;
+    @include button-variant($primary-color, $accent-color, $primary-color-dark);
+}
+
+.btn-primary-color-light {
+    color:$primary-color-light;
+    @include button-variant($primary-color, $accent-color, $primary-color-dark);
+}
+
+.btn-secondary-color {
+    color:$secondary-color;
+    @include button-variant($primary-color, $accent-color, $primary-color-dark);
+}
+
+.btn-secondary-color-dark {
+    color:$secondary-color-dark;
+    @include button-variant($primary-color, $accent-color, $primary-color-dark);
+}
+
+.btn-secondary-color-light {
+    color:$secondary-color-light;
+    @include button-variant($primary-color, $accent-color, $primary-color-dark);
+}
+
+.btn-accent-color {
+   color:$secondary-color-light;
+   @include button-variant($primary-color, $accent-color, $primary-color-dark);
+
+
+} 
+
+.btn-rounded {
+ @include btn-rounded-variant (50);  
+}
+.btn-sharp {
+ @include btn-rounded-variant (0);  
+}
+  
+/*.btn-raised-variant{
+ @include btn-raised-variant ($color);  
+}
+ 
+.btn-outline-variant {
+ @include   btn-outline-variant (0,$primary-color);
+}*/
+
+
+

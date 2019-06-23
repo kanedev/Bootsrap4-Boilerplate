@@ -1,0 +1,17 @@
+/* 
+ * 6.9 Section: Partners 
+ */
+ #partners {
+    background: url(../../media/statistic.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    .partners-overlay
+      {
+          padding-top: 2%;
+    padding-bottom: 4%;
+    background-color: $primary-color;
+    @include  opacity(.8);
+  }
+  }

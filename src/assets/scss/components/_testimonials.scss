@@ -1,0 +1,32 @@
+/* 
+ * 6.5 Section: Testimonials 
+ */
+ #testimonials {
+    background: url(../../media/image03.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    .testimonials-overlay
+      {
+          padding-top: 2%;
+    padding-bottom: 4%;
+    background-color: $primary-color;
+    @include  opacity(.8);
+  }
+  
+  .testimonials-content {
+    padding: 2% 0;
+    border-width: 1px;
+    border-style: solid;
+    border-color: $primary-color-light;
+  }
+  
+  .testimonial-text {
+    font-family: $font-tertiary;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    color: $color-white;
+  }
+  }

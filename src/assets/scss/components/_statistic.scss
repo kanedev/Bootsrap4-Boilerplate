@@ -1,0 +1,16 @@
+/* 
+ * 6.2 Section: Statistic 
+ */
+ #statistic {
+    background: url(../../media/image03.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    .statistic-overlay
+      {
+          padding: 1.5% 0;
+    background-color: $primary-color;
+    @include  opacity(.8);
+  }
+  }

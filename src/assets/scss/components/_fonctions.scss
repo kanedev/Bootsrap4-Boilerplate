@@ -1,0 +1,31 @@
+/* 
+ * 6.6 Section: Fonctions 
+ */
+ #fonctions {
+    padding: 2% 0;
+    background-color: $color-white;
+    .fonction-content
+      {
+          padding: 20px;
+  }
+  
+  .fonction-description {
+    font-size: 14px;
+    color: $color-gray;
+  }
+  
+  .icon-background {
+    width: 120px;
+    height: 120px;
+    border: 4px solid $primary-color;
+    border-radius: 120px;
+  }
+  
+  .icon {
+    position: relative;
+    top: 20%;
+    overflow-y: hidden;
+    text-align: center;
+    color: $secondary-color;
+  }
+  }

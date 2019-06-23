@@ -1,11 +1,15 @@
 //@import '_colors';
 //@import 'placeholder'; // to Prefetch  
+@import "~bootstrap/scss/bootstrap";
+@import '~font-awesome/css/font-awesome.css';
+//$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 
+//@import '~animate.css/animate.css';
 
-
+@import 'Custom.scss';
 // Option A : Include Bootsrap.scss
 // Custom.scss
-@import "~bootstrap/scss/bootstrap";
+
 
 // Option B: Include parts of Bootstrap
 
@@ -20,3 +24,252 @@
 // @import "~/bootstrap/scss/images";
 // @import "~/bootstrap/scss/code";
 // @import "~bootstrap/scss/grid";
+
+
+$icon-font-path: '../fonts/';
+
+// bower:scss
+//@import 'bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+//@import 'bower_components/include-media/dist/_include-media.scss';
+// endbower
+
+@import 'helpers/_variables.scss';
+@import 'base/_fonts.scss';
+@import 'helpers/_mixins.scss';
+
+.browserupgrade {
+  margin: .2em 0;
+  padding: .2em 0;
+  color: #000;
+  background: #ccc;
+}
+
+html,body {
+  height: 100%;
+}
+
+body {
+  font-family: $font-tertiary;
+  //font-size: 150%;
+}
+
+a {
+	//color: $brand-primary;
+	@include transition(1.7s);
+	&:hover, &:active, &:focus {
+		//color: $brand-primary;
+		outline: none;
+	}
+}
+
+p {
+    font-size: 1rem;
+    font-family: $font-tertiary;
+    letter-spacing: 1px;
+    line-height: 1.5;   
+}
+
+
+::-webkit-selection {
+  color: $accent-color;
+  background: $primary-color;
+}
+
+::-moz-selection {
+  color: $accent-color;
+  background: $primary-color;
+}
+
+::selection {
+  color: $accent-color;
+  background: $primary-color;
+}
+
+
+.notificationfix {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+
+
+h1 {
+  font-family: $font-primary;
+  font-size: 1.8em!important;
+  line-height: 20px !important;
+ margin: 0px !important; 
+ padding : 0px !important; 
+ 
+}
+
+h2 {
+  font-family: $font-primary;
+  font-size: 8em;
+  line-height: .5;
+  padding-bottom: 30px;
+  text-align: center;
+  color: $color-white;
+  text-shadow: 0 3px 2px rgba(0, 0, 0,.5);
+  
+   /* Portrait tablets and small desktops */
+ @media (min-width: 768px) and (max-width: 991px) {
+  font-size: 6em;
+  line-height: .5;
+  padding-bottom: 30px;
+ }
+
+ /* Landscape phones and portrait tablets */
+ @media (max-width: 767px) {
+  font-size: 5em;
+  line-height: .4;
+  padding-bottom: 20px;
+ }
+
+ /* Portrait phones and smaller */
+ @media (max-width: 480px) {
+  font-size: 3.5em;
+  line-height: .3;
+  padding-bottom: 15px;
+ }
+}
+
+h3 {
+  font-family: $font-primary;
+  font-size: 3em;
+  //line-height: 1;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  color: $color-black;
+
+  /* Portrait tablets and small desktops */
+  @media (min-width: 768px) and (max-width: 991px) {
+  font-size: 1.8em;
+  font-weight: 300;
+ // line-height: 0.6;
+  }
+
+  /* Landscape phones and portrait tablets */
+  @media (max-width: 767px) {
+  font-size: 2em;
+  font-weight: 200;
+ // line-height: 0.6;
+  }
+
+  /* Portrait phones and smaller */
+  @media (max-width: 480px) {
+  font-size: 2em;
+  font-weight: 200;
+ // line-height: 0.2;
+  }  
+}
+
+h4 {
+  margin-top: 1rem;
+  //margin-bottom: 1rem;
+  font-family: $font-secondary;
+  font-size: 1.8em;
+  line-height: 2;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  color: $color-black;
+  
+  /* Portrait tablets and small desktops */
+  @media (min-width: 768px) and (max-width: 991px) {
+  font-size: 1.4em;
+  font-weight: 300;
+  line-height: 1.2;
+  }
+
+  /* Landscape phones and portrait tablets */
+  @media (max-width: 767px) {
+  font-size: 1.3em;
+  font-weight: 200;
+  line-height: 1.2;
+  }
+
+  /* Portrait phones and smaller */
+  @media (max-width: 480px) {
+  font-size: 1.2em;
+  font-weight: 200;
+  line-height: 1.2;
+  } 
+  
+}
+
+h5 {
+  font-family: $font-secondary;
+  font-size: 1.1em;
+  line-height: 1.1em;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  color: $color-black;
+  
+  /* Portrait tablets and small desktops */
+  @media (min-width: 768px) and (max-width: 991px) {
+  font-size: 0.8em;
+  font-weight: 300;
+  line-height: 0.8em;
+  }
+
+  /* Landscape phones and portrait tablets */
+  @media (max-width: 767px) {
+  font-size: 0.7em;
+  font-weight: 200;
+  line-height: 0.7em;
+  }
+
+  /* Portrait phones and smaller */
+  @media (max-width: 480px) {
+  font-size: 0.6em;
+  font-weight: 150;
+  line-height: 0.6em;
+  } 
+  
+}
+// Colors class 
+.primary-color{
+    color:$primary-color!important;
+}
+.primary-color-dark {
+    color:$primary-color-dark!important;
+}
+.primary-color-light {
+    color:$primary-color-light!important;
+}
+.secondary-color {
+    color:$secondary-color!important;
+}
+.secondary-color-dark {
+    color:$secondary-color-dark!important;
+}
+.secondary-color-light {
+    color:$secondary-color-light!important;
+}
+.accent-color {
+    color:$accent-color!important;
+}
+
+
+//header
+@import 'layout/_header.scss';
+//components : navigation bar
+@import 'components/_navigation.scss';
+//components : nav pills
+@import 'components/_nav-pills.scss';
+//components : buttons
+@import 'components/_buttons.scss';
+//components : forms
+@import 'components/_forms.scss';
+// sections
+@import 'layout/_sections.scss';
+//footer
+@import 'layout/_footer.scss';
+
+
+
+
+

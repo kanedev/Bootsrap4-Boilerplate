@@ -1,0 +1,217 @@
+/* 
+ * 6.0 Sections
+ */
+section {
+  text-align: center;
+  hr
+    {
+  width: 25%;
+  color: $color-gray-light;
+  border-color: $color-gray-light;
+  background-color: $color-gray-light;
+}
+}
+
+
+.section-subtitle {
+  font-family: $font-secondary;
+  font-size: 30px;
+  font-weight: 400;
+  color: $color-gray-light;
+        /* Landscape tablets and medium desktops */
+  @media (min-width: 992px) and (max-width: 1199px)
+        {
+            font-size: 30px;
+  font-weight: 400;
+}
+
+        /* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  font-size: 20px;
+            font-weight: 300;
+}
+
+        /* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  font-size: 20px;
+            font-weight: 200;
+}
+
+        /* Portrait phones and smaller */
+@media (max-width: 480px) {
+  font-size: 18px;
+            font-weight: 100;
+}
+    }
+
+.section-head {
+  margin-top : 30px;
+
+    }
+.section-body {
+  font-size: 18px;
+ // text-align: justify;
+  color: $color-gray;
+}
+
+.legend {
+  //margin-top: 1rem;
+  //margin-bottom: 1rem;
+  
+  font-family: $font-secondary;
+  font-size: 1.5em;
+  line-height: 2;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  color: $color-black;
+  
+  /* Portrait tablets and small desktops */
+  @media (min-width: 768px) and (max-width: 991px) {
+  font-size: 1.3em;
+  font-weight: 300;
+  line-height: 1.2;
+  }
+
+  /* Landscape phones and portrait tablets */
+  @media (max-width: 767px) {
+  font-size: 1.2em;
+  font-weight: 200;
+  line-height: 1.2;
+  }
+
+  /* Portrait phones and smaller */
+  @media (max-width: 480px) {
+  margin-top: 1rem;
+  font-size: 1.1em;
+  font-weight: 200;
+  line-height: 1.2;
+  } 
+  
+}
+
+.title-legend{
+  margin-top: 1.5rem;
+  font-size: 1.8em;
+  font-weight: 200;
+  line-height: 0.2;
+  font-family: $font-primary;
+  text-transform: uppercase;
+  text-align: center;
+  color: $color-black;
+
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) { 
+margin-top:  1rem;
+font-size: 2em;
+font-weight: 200;
+line-height: 0.6;
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+margin-top:   1rem;
+font-size: 3em;
+font-weight: 300;
+line-height: 0.6;
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+margin-top:  1rem;
+font-size: 3em;
+line-height: 1;
+font-weight: 500;
+}
+
+
+
+
+
+  
+  /* Portrait tablets and small desktops */
+  @media (min-width: 768px) and (max-width: 991px) {
+
+  }
+
+  /* Landscape phones and portrait tablets */
+  @media (max-width: 767px) {
+
+  }
+
+  /* Portrait phones and smaller */
+  @media (max-width: 480px) {
+
+  }  
+}
+
+
+/* 
+ * 6.1 Section: About 
+ */
+@import '../components/about';
+
+/* 
+ * 6.2 Section: Statistic 
+ */
+ @import '../components/statistic';
+
+/* 
+ * 6.3 Section: Services 
+ */
+ @import '../components/services';
+
+
+/* 
+ * 6.4 Section: Works 
+ */
+ @import '../components/works';
+
+
+/* 
+ * 6.5 Section: Testimonials 
+ */
+ @import '../components/testimonials';
+
+/* 
+ * 6.6 Section: Fonctions 
+ */
+ @import '../components/fonctions';
+
+/* 
+ * 6.7 Section: CTA 
+ */
+ @import '../components/cta';
+
+/* 
+ * 6.8 Section: Reasons 
+ */
+ @import '../components/reasons';
+
+
+/* 
+ * 6.9 Section: Partners 
+ */
+ @import '../components/partners';
+
+/* 
+ * 6.10 Section:  Team
+ */
+ @import '../components/team';
+
+/* 
+ * 6.11 Section: Blog 
+ */
+ @import '../components/blog';
+
+/* 
+ * 6.12 Section: Plans 
+ */
+ 
+ @import '../components/plans';
+
+
+

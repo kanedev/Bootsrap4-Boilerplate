@@ -1,0 +1,72 @@
+/* 
+ * 6.8 Section: Reasons 
+ */
+ #reasons {
+    padding-top: 2%;
+    padding-bottom: 4%;
+    background-color: $primary-color;
+    hr
+      {
+          color: $primary-color-light !important;
+    border-color: $primary-color-light !important;
+    background-color: $primary-color-light !important;
+  }
+  
+  .section-subtitle {
+    color: $primary-color-light  !important;
+  }
+  
+  .reasons-content {
+    padding: 8 10 6 8;
+  }
+  
+  .reasons-box {
+    position: relative;
+    z-index: 160;
+    overflow: hidden;
+  }
+  
+  .section-description {
+    font-size: 18px;
+    //font-family: $font-secondary;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: justify;
+    text-align: center;
+    color: $color-white;
+  }
+  
+  .reasons-table {
+    // padding: 2% 0%;
+    border-width: 1px;
+    border-top-color: $primary-color-dark;
+    border-right-color: $primary-color-dark;
+    //   border-style: solid;
+    border-bottom-color: $primary-color;
+    border-left-color: $primary-color-dark;
+  }
+  
+  .reasons-table-header {
+    color: $primary-color;
+          /*        padding: 2% 0%;*/
+    //   border-width: 1px;
+    //      border-style: solid;
+    //     border-color: $primary-color-light;
+    background-color: $primary-color-light;
+    p
+          {
+              margin: 0;
+    color: $color-white;
+  }
+      }
+  
+  .reasons-table-body {
+    padding-bottom: 40px;
+          /*        padding: 2% 0%;
+          border-width: 1px;
+          border-style: solid;*/
+    //   border-color: $primary-color-light;
+   // @include gradient-vertical($primary-color-light, $primary-color);
+    @include  gradient($primary-color, $primary-color-dark, 'vertical');
+  }
+  }

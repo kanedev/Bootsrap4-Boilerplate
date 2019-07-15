@@ -6,7 +6,10 @@
     padding-bottom: 4%;
     background-color: $primary-color;
    /* IE7 */
-    @include pills-nav();
+
+
+    @include tabs-nav();
+
       hr
       {
           color: $primary-color-light !important;
@@ -18,28 +21,28 @@
     color: $primary-color-light  !important;
   }
   
-  .centered-pills {
+  .centered-tabs {
     margin-top: 10px;
     margin-bottom: 30px;
     text-align: center;
   }
   
-  .centered-pills ul.nav-pills {
+  .centered-tabs ul.nav-tabs {
     display: inline-block;
   }
   
-  .centered-pills li {
+  .centered-tabs li {
     display: inline;
   }
   
-  .centered-pills a {
+  .centered-tabs a {
     float: left;
   }
   
-  * html .centered-pills ul.nav-pills {
+  * html .centered-tabs ul.nav-tabs {
     display: inline;
   } /* IE6 */
-  * + html .centered-pills ul.nav-pills {
+  * + html .centered-tabs ul.nav-tabs {
     display: inline;
   }
   
@@ -51,6 +54,7 @@
     position: relative;
     z-index: 160;
     overflow: hidden;
+    margin : 6px;
   }
   
   .work-box-overlay {

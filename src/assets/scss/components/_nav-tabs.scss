@@ -1,0 +1,36 @@
+  
+@mixin tabs-nav{
+
+    .nav-tabs {
+        border-bottom: 0px solid #dee2e6;
+    }
+    .nav-tabs .nav-link {
+        border: 0px solid transparent;
+    }
+.nav-tabs > li > a {
+        font-family: $font-secondary;
+        font-size: 18px;
+        position: relative;
+        display: block;
+        padding: 6px 11px;
+        text-transform: uppercase;
+        color: $primary-color;
+        border-radius: 0;
+        background-color: $primary-color-light;
+    }
+
+    .nav-tabs > li > a:hover,
+        .nav-tabs > li > a:focus {
+        text-decoration: none;
+        color: $accent-color;
+        background-color: $secondary-color-light;
+    }
+    .nav-tabs .nav-link.active, 
+    .nav-tabs > li.active > a,
+    .nav-tabs > li.active > a:hover,
+        .nav-tabs > li.active > a:focus {
+        color: $accent-color;
+        background-color: $secondary-color-light;
+    }
+   
+    }

@@ -1,31 +1,16 @@
-/*
-Colors shema
-*/
 
-//Brand colors
-
-$primary-color:#432F44;
-$primary-color-dark:#371638;
-$primary-color-light:#8A688C;
-//----------------------------
-$secondary-color:#a7425c;
-$secondary-color-dark:#401923;
-$secondary-color-light:#ea5455;
-//----------------------------
-$accent-color:#ffd460;
-
-//Base colors
-$color-white : #fff ;
-$color-black : #4c4c4c;
-$color-gray :  #808080;
-$color-gray-light :  #9e9e9e;
-$color-shadow : #403a3e ;
 
 // Navbar
 $dropdown :true;
 
 //Input border radius
-$radius:0px;
+// To make a change of a mixin, you need to redifine some variables of this mixin.
+ $radius:1px;
+ $input-focus-color:$secondary-color ;
+ $input-focus-bg: $secondary-color-dark;
+ $input-focus-border-color : $primary-color-light;
+ $input-focus-box-shadow: 0px 0px 8px $primary-color-light;
+ $input-placeholder-color : $primary-color-light ;
 
 // Options
 //
@@ -33,7 +18,7 @@ $radius:0px;
 
 $enable-caret:                                true !default;
 $enable-rounded:                              true !default;
-$enable-shadows:                              true !default;
+$enable-shadows:                              false !default;
 $enable-gradients:                            true !default;
 $enable-transitions:                          true !default;
 $enable-prefers-reduced-motion-media-query:   true !default;

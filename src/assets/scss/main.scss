@@ -32,8 +32,9 @@ $icon-font-path: '../fonts/';
 //@import 'bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
 //@import 'bower_components/include-media/dist/_include-media.scss';
 // endbower
-
+@import 'base/_colors.scss';
 @import 'helpers/_variables.scss';
+@import 'helpers/_placeholders.scss';
 @import 'base/_fonts.scss';
 @import 'helpers/_mixins.scss';
 
@@ -230,28 +231,7 @@ h5 {
   } 
   
 }
-// Colors class 
-.primary-color{
-    color:$primary-color!important;
-}
-.primary-color-dark {
-    color:$primary-color-dark!important;
-}
-.primary-color-light {
-    color:$primary-color-light!important;
-}
-.secondary-color {
-    color:$secondary-color!important;
-}
-.secondary-color-dark {
-    color:$secondary-color-dark!important;
-}
-.secondary-color-light {
-    color:$secondary-color-light!important;
-}
-.accent-color {
-    color:$accent-color!important;
-}
+
 
 
 //header

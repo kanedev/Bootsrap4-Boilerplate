@@ -1,12 +1,12 @@
- var $ = require('jquery');
- import 'popper';
+ //var $ = require('jquery');
+ //import 'popper';
 
  import 'bootstrap/dist/js/bootstrap.min.js'
 
 
 // // include through webpack.ProvidePlugin with exports-loader
-// import 'bootstrap/js/dist/util'
-//  import 'bootstrap/js/dist/carousel'
+ //import 'bootstrap/js/dist/util'
+ //import 'bootstrap/js/dist/carousel'
 //  import 'bootstrap/js/dist/dropdown'
 //  import 'bootstrap/js/dist/tab'
 
@@ -32,5 +32,5 @@ jQuery(document).ready(function() {
 	$('.carousel').carousel({
     	pause: "false",
     	interval: 7000
-	});
-   }); 
+	})
+});

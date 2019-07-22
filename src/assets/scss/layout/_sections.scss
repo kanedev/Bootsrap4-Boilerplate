@@ -53,13 +53,20 @@ section {
  // text-align: justify;
   color: $color-gray;
 }
+.section-description{
+  font-family: "Courier New", sans-serif;
+  //font-size: 1.5rem;
+  line-height: 20px;
+  letter-spacing: 1px;
+ // color:$color-white;
+}
 
 .legend {
   //margin-top: 1rem;
   //margin-bottom: 1rem;
   
   font-family: $font-secondary;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   line-height: 2;
   text-transform: uppercase;
   font-weight: 500;
@@ -191,27 +198,30 @@ font-weight: 500;
  */
  @import '../components/reasons';
 
+/* 
+ * 6.9 Section: Plans 
+ */
+ 
+ @import '../components/plans';
 
 /* 
- * 6.9 Section: Partners 
+ * 6.10 Section: Partners 
  */
  @import '../components/partners';
 
-/* 
- * 6.10 Section:  Team
- */
- @import '../components/team';
-
-/* 
+ /* 
  * 6.11 Section: Blog 
  */
  @import '../components/blog';
 
 /* 
- * 6.12 Section: Plans 
+ * 6.12 Section:  Team
  */
- 
- @import '../components/plans';
+ @import '../components/team';
+
+
+
+
 
 
 

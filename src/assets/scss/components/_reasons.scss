@@ -61,12 +61,12 @@
       }
   
   .reasons-table-body {
-    padding-bottom: 40px;
-          /*        padding: 2% 0%;
-          border-width: 1px;
+   // padding-bottom: 40px;
+                 padding: 2% 0%;
+        /*   border-width: 1px;
           border-style: solid;*/
     //   border-color: $primary-color-light;
    // @include gradient-vertical($primary-color-light, $primary-color);
-    @include  gradient($primary-color, $primary-color-dark, 'vertical');
+    @include  gradient( $primary-color-dark, $primary-color,'vertical');
   }
   }

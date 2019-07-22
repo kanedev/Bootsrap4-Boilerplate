@@ -1,24 +1,37 @@
+
 .form-control {
   background-color: $primary-color-dark;
-  border-color: $primary-color-light;
+  //border-color: $secondary-color-light;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-  //border: $radius solid $primary-color-light;
-  color : $secondary-color-light;
- // border-radius: 0px; // Note: This has no effect on <select>s in some browsers, due to the limited stylability of <select>s in CSS.
- 
+  border: $radius solid $primary-color-light;
+  color : $primary-color-light;
+  border-radius: 0px; // Note: This has no effect on <select>s in some browsers, due to the limited stylability of <select>s in CSS.
+
+//@include box-shadow($input-box-shadow);
+@include form-control-focus();
+//box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(255, 100, 255, 0.5);
+
+//@include box-shadow($primary-color-light);
+
  // BS3
- //@include form-control-focus($primary-color-light); 
+ //@include form-control-focus(); 
  //@include placeholder($primary-color-light); 
  
- @include border-top-radius($radius);
- @include border-bottom-radius($radius);
+ //@include border-top-radius($radius);
+ //@include border-bottom-radius($radius);
 }
 
 input[type="text"],input[type="email"] {
- 
+ // @include form-control-focus(); 
   // BS3
   //@include form-control-focus($primary-color-light);
   // @include placeholder($primary-color-light);
+   // Placeholder
+   &::placeholder {
+    color: $input-placeholder-color;
+    // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526.
+    opacity: 1;
+  }
 }
 
  

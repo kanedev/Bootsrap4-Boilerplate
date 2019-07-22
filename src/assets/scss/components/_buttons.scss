@@ -35,7 +35,7 @@
 
 .btn-accent-color {
    color:$secondary-color-light;
-   @include button-variant($primary-color, $accent-color, $primary-color-dark);
+   @include button-variant($accent-color, $accent-color, $primary-color-dark);
 
 
 } 

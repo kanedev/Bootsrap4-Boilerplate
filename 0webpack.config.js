@@ -13,9 +13,6 @@ const PreloadWebpackPlugin = require('preload-webpack-plugin');
 const FixStyleOnlyEntriesPlugin = require("webpack-fix-style-only-entries");
 const HtmlCriticalWebpackPlugin = require("html-critical-webpack-plugin");
 var CompressionPlugin = require("compression-webpack-plugin");
-//const MomentLocalesPlugin = require('moment-locales-webpack-plugin');
-
-
 
 const env = process.env.NODE_ENV;
 const isProduction = env === 'production';
@@ -51,7 +48,6 @@ const config = {
 
 
   devServer: {
-    historyApiFallback: true,
     watchOptions: {
       poll: true
   },
@@ -59,14 +55,7 @@ const config = {
   //  hot: true,
     // inline: true,
     // host: '0.0.0.0',
-    port: 5000,
-    proxy: {
-      "/auth": 'http://localhost:4000',
-      "/api": 'http://localhost:4000',
-      //"secure": false,
-      //"changeOrigin": true
-      //'/contact': 'http://localhost:4000',
-    },
+    port: 1111,
     watchContentBase: true,
     //stats: 'errors-only',
     overlay: true,
@@ -79,7 +68,7 @@ const config = {
     rules: [
       //babel-loader    
         {
-        test: /\.(js|jsx)$/,
+        test: /\.js$/,
         include: [
           path.resolve(__dirname, 'src')
         ],
@@ -262,6 +251,10 @@ const config = {
 
  
    new webpack.HashedModuleIdsPlugin(),
+
+
+
+   
     new DashboardPlugin(),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
@@ -269,7 +262,6 @@ const config = {
       //hash: true,
       template: 'index.html',
       filename: 'index.html',
-      
       minify:{
         collapseWhitespace: env === 'development' ? 'false' : 'true', 
         removeComments: env === 'development' ? 'false' : 'true', 
@@ -285,18 +277,6 @@ const config = {
       filename: env === 'development' ? '[name].css' : './assets/css/[name].[hash].css',
       chunkFilename: env === 'development' ? '[name].css' : './assets/css/[name].[hash].css',
     }),
-
-            // To strip all locales except “en”
-            //new MomentLocalesPlugin(),
-
-            // Or: To strip all locales except “en”, “es-us” and “ru”
-            // (“en” is built into Moment and can’t be removed)
-          //   new MomentLocalesPlugin({
-          //     localesToKeep: ['fr'],
-          // }),
-
-
-
 
     
 
@@ -336,7 +316,7 @@ const config = {
   ],
 
   resolve: {
-    extensions: ['.ts', '.js', '.jsx'],
+    extensions: ['.ts', '.js'],
     alias: {
       'jquery': 'jquery/dist/jquery.slim.min.js',
       'popper': 'popper.js/dist/umd/popper.min.js',
